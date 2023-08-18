@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: Dagestan;
+    src: url(DagestaN.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+/*--- admin nav bar --*/
+.header_admin{
+    height: 100vh;
+    width: 100%;
+}
+
+.logo img {
+    width: 110px;
+    position: relative;
+    top:0px;
+    left:60px;
+}
+
+.logo h1{
+    color: #270465;
+    position: absolute;
+    font-family: 'Dagestan';
+    top:160px;
+    font-size: 35px;
+    left:47px;
+    
+}
+
+.navbar{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgb(243, 187, 243);
+    backdrop-filter: blour(5px);
+    position: fixed;
+    z-index: 1;
+}
+nav ul{
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #270465;
+    font-size: 25px;
+    align-items: center;
+    font-family: 'Dagestan';
+    letter-spacing: 0.5px;
+}
+
+nav a:hover{
+    color: whitesmoke;
+}
+
+/*log out button*/
+.logout{
+    position: fixed;
+   margin-top: 250px;
+   margin-left: 60px;
+}
+.logbtn{
+    width:130px;
+    height:40px;
+    font-size: 25px;
+    padding-top: 6px;
+    background: transparent;
+    border:5px solid #270465;
+    color:#270465;
+    cursor: pointer;  
+    font-family: 'Dagestan';
+    position: relative;
+    top:0%;
+    overflow: hidden;
+    z-index: 1;
+}
+span{
+    background: rgb(255, 220, 255);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.apage{
+    position: absolute;
+    top:40%;
+    left:50%;
+    font-size: 60px;
+    font-family: 'Dagestan';
+    color: #4c3180;
+    letter-spacing: 1.5px;
+
+}
+
+

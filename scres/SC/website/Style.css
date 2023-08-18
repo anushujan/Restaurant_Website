@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: Dagestan;
+    src: url(DagestaN.ttf);
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Dagestan;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 0px 40px;
+    position: fixed;
+    z-index: 1;
+    background: rgb(248, 236, 248);
+}
+img{
+    float: left;
+    width:70px;
+    margin-top: 7px;
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #4c3180;
+    text-transform: uppercase;
+    margin-top: 29px;
+    margin-left: 20px;
+    letter-spacing: 0.5px;
+}
+nav ul{
+    float: right;
+    margin-top: 19px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+nav li a{  
+    text-decoration: none;
+    color: #270465;
+}
+nav ul li a{
+    font-size: 23px;
+    letter-spacing: 0.5px;
+ 
+}
+nav ul li::after {
+    content: '';
+    width:0%;
+    height: 4px;
+    background: rgb(235, 160, 235);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.reservebtn{
+    width:130px;
+    height:40px;
+    font-size: 25px;
+    padding-top: 6px;
+    background: transparent;
+    border:5px solid #270465;
+    color:#270465;
+    cursor: pointer;  
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+span{
+    background: rgb(235, 160, 235);
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+#homepage{
+    height:100vh;
+ 
+}
+.home img{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.home h1{
+    position: absolute;
+    letter-spacing: 1px;
+    font-size: 100px;
+    float: left;
+    top:40%;
+    left:5%;
+    color: aliceblue;
+}
+.home p{
+    position: absolute;
+    left:5%;
+    top:34%;
+    color: rgb(235, 160, 235);
+    font-size: 50px;
+}
+input[type="text"]{
+    height: 45px;
+    width:250px;
+    outline: none;
+    position: absolute;
+    top:72%;
+    left:5%;
+    padding: 0 2px;
+    color: rgb(202, 202, 202);
+    font-size: 25px;
+    border:0.8px solid rgb(235, 160, 235);
+    box-sizing: border-box;
+    border-radius: 0px;
+    background: transparent;
+}
+::placeholder{
+    color: rgb(235, 160, 235);;
+}
+input[type="submit"]{
+    position: absolute;
+    left:23.2%;
+    top:72%;
+    width:100px;
+    height:45px;
+    font-size: 20px;
+    color: #4c3180;
+    background: rgb(235, 160, 235);
+    outline: none;
+    border: none;
+    cursor: pointer;   
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background: #4c3180;
+    color:rgb(235, 160, 235);
+}
+/*menu page start*/
+#menupage{
+    background: rgb(235, 160, 235);
+    height: 100vh;
+    position: relative;
+}
+.menu p{
+    position: absolute;
+    font-size: 50px;
+    left:20%;
+    top: 100px;
+    color: #270465;
+}
+.home-section,
+.menu-section,
+.aboutus-section,
+.gallery-section,
+.footer-section
+{
+    height: 100vh;
+    width: 100%;
+}
+.menubox p{
+    position: absolute;
+    left:20%;
+    top:25%;
+    width: 800px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-variant: normal;
+}
+.navmenu{
+    width: 60%;
+    height: 30px;
+    position: absolute;
+    top:34%;
+    left: 20%;
+    background: rgb(238, 197, 238);
+    text-align: center;
+    border-radius: 10px;
+}
+.navmenu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    padding-top: 5px;
+}
+.navmenu ul li a{
+    text-decoration: none;
+    font-size: 19px;
+}
+.navmenu ul li a:hover{
+    color: #4c3180;
+}
+.navmenu ul li::after {
+    content: '';
+    width:0%;
+    height: 4px;
+    background: rgb(199, 119, 199);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navmenu ul li:hover::after{
+    width: 100%;
+}
+.scroll{
+    background: rgb(238, 197, 238);
+    width:75%;
+    top:42%;
+    left:20%;
+    position:absolute;
+    
+}
+.foodbox{
+    width:80%;
+    height:350px;
+    background: rgb(238, 197, 238);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+}
+.soup-lists{
+   position: relative;
+   padding-left: 35px;
+   padding-top: 5px;
+   font-family: 'Roboto';
+}
+.soup-lists li{
+    padding-top:10px;
+    list-style: none;
+    text-transform: uppercase;
+    color:#270465;
+}
+.namemenu{
+    font-family: 'Dagestan';
+    font-size: 30px;
+    font-weight: 500;  
+}
+.soup-lists .menu{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+.soup-lists .into{
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+/*menu page end*/
+/*aboutus page start*/
+#aboutuspage{
+    background: rgb(248, 236, 248);
+    height: 100vh;
+    position: relative;
+}
+.aboutus p{
+    position: absolute;
+    font-size: 50px;
+    left:20%;
+    top: 130px;
+    color: #270465;
+}
+.aboutbox p{
+    position: absolute;
+    left:20%;
+    top:30%;
+    width: 500px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-variant: normal;
+}
+.aboutbox img{
+    position: absolute;
+    left: 60%;
+    top:40%;
+    width: 400px;
+    height: 300px;
+}
+.aboutbox .boximg{
+    position: absolute;
+    height: 350px;
+    top:37%;
+    left:60%;
+    width: 430px;
+    background: linear-gradient(#57398f, #8761cc );   
+}
+/*gallery page start*/
+#gallerypage{
+    background: rgb(235, 160, 235);
+    height: 100vh;
+    position: relative;
+}
+.gallery p{
+    position: absolute;
+    font-size: 50px;
+    left:20%;
+    top: 110px;
+    color: #270465;
+}
+.gallery{
+    display: grid;
+    padding-top: 170px;
+    padding-left: 160px;
+    grid-template-columns:20% 20% 20% 20%;
+    column-gap: 40px;
+    row-gap: 0px;
+}
+.gallerybox img{
+    width: 300px;
+    height: 250px;
+    transition: 1s;
+    
+}
+.gallerybox img:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    border-radius: 10px;
+    
+}
+/*gallery page end*/
+
+/*contact page start*/
+#contactpage{
+    background: rgb(248, 236, 248);
+    height: 100vh;
+    position: relative;
+}
+.contact p{
+    position: absolute;
+    font-size: 50px;
+    left:20%;
+    top: 130px;
+    color: #270465;
+}
+
+.contactbox{
+    width:500px;
+    height: 300px;
+    background: linear-gradient(#57398f, #8761cc );  
+    position: relative;
+    font-weight: 500;
+    top:200px; 
+    left: 20%;
+}
+.contactbox .cp,.contactbox .wu{
+    position: absolute;
+    font-size: 50px;
+    left:8%;
+    top: 15px;
+    color: rgb(235, 160, 235);
+}
+.contactbox .wu{
+    top:50px;
+    left:100px;
+}
+.contactbox .ph,.contactbox .lp, .contactbox .t{
+    top:62.9%;
+    position: absolute;
+    width:25px;
+    left:32px;
+}
+.contactbox .lp{
+    top:39%;
+}
+.contactbox .t{
+    top:80%;
+}
+.contactbox .num, .contactbox .loc, .contactbox .op{
+    font-size: 18px;
+    color: rgb(248, 236, 248);
+    top:200px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    left:80px;
+}
+.contactbox .loc{
+    top:120px;
+    
+}
+.contactbox .op{
+    top:250px;
+    
+}
+
+/*contact form box*/
+.contactform-box
+{
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      top:23%;
+      position: absolute;
+      left:55%;
+      background-color: #fff;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 0, 234, 0.1);
+      height: 370px;
+      width:500px;
+    }
+    .contact-form {
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #270465;
+    }
+
+    .contact-form input[type="name"],
+    .contact-form input[type="email"],
+    .contact-form input[type="subject"]
+    {
+      width: 50%;
+      padding: 8px;
+      border: 1px solid #4c3180;  
+      border-radius: 5px; 
+      box-sizing: border-box;
+      font-weight: 300;
+        
+    }
+    .contact-form textarea{
+        width: 100%;
+        height: 170px;
+        padding: 10px;
+        border: 1px solid #4c3180; 
+        border-radius: 5px; 
+    }
+    .contact-form input[type="submit"]{
+        top: 89%;
+        left: 70%;
+        height:30px;
+    }
+
+
+/*contact page end*/
+
+.footer-section{
+    height: 10vh;
+    position: relative;
+    background: #4c3180;
+}
+.footerbox .copyright{
+    position: absolute;
+    top:25px;
+    left: 100px;
+    color: rgb(248, 236, 248);
+    letter-spacing: 0.7px;
+}
+.footerbox .designed{
+    position: absolute;
+    top:25px;
+    left: 1000px;
+    color: rgb(248, 236, 248);
+    letter-spacing: 0.7px;
+}
+
+
+
+
+/*scrollbar design*/
+::-webkit-scrollbar{
+    width: 15px;
+    
+}
+::-webkit-scrollbar-track{
+    background: rgb(248, 236, 248);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#57398f, #8761cc );
+    border-radius: 0px;
+}
+
+
+
+
+
+
+/*  responsive design*/
+@media(max-width:1122px){
+    nav ul {
+        position: absolute;
+        top:75%;
+        right:0;
+        width: 200px;
+        height:100vh;
+        background-color: rgb(248, 236, 248);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        transition: all .42s ease;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 5px;
+        transition: all .42s ease;
+    }
+}

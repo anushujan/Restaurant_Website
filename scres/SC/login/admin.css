@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: Dagestan;
+    src: url(DagestaN.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+.box{
+  position: relative;
+  top:10%;
+  width: 380px;
+  background: rgb(248, 236, 248);
+  border-radius: 0px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.box .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: 4px;
+  color: #fff;
+  font-family: 'Dagestan';
+  background:linear-gradient(#57398f, #8761cc);
+}
+.box form{
+  padding: 10px 30px 50px 30px;
+}
+.field{
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding-left: 20px;
+  background: transparent;
+  border: 1px solid lightgrey;
+  border-radius: 0px;
+  font-family: 'Roboto';
+}
+.field label{
+  position: absolute;
+  left: 0;
+  padding: 15px;
+  pointer-events: none;
+  color:#4c3180;
+  font-size: 1em;
+  font-family: Dagestan;
+  transition: 0.5s;
+}
+.field input:valid ~label,
+.field input:focus ~label{
+  transform: translateX(10px) translateY(-7px);
+  font-size:1rem;
+  padding: 0 10px;
+  background: #f8ecf8;
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left:0;
+  margin-top: 8px;
+  font-size: 20px;
+  font-family: Dagestan;
+  font-weight: 500;
+  cursor: pointer; 
+  background: #4c3180;
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+  background: rgb(235, 160, 235);
+  color: #4c3180;
+}
+.error{
+  background: #F2DEDE ;
+  color: #A94442;
+  margin-top: 20px;
+  padding:10px;
+  width:100%;
+  border-radius: 5px;
+  font-family: Dagestan;
+  z-index: 1;
+}

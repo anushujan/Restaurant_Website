@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: Dagestan;
+    src: url(DagestaN.ttf);
+}
+/* add staff php design  */
+.addstaff-section{
+    position: absolute;
+    top:30%;
+    left:50%;
+  }
+  .titleadd{
+    top:0%;
+    left:50%;
+    font-size: 60px;
+    font-family: 'Dagestan';
+    color: #4c3180;
+    letter-spacing: 1.5px;
+  }
+  .add .field input{
+    width:250px;
+    height:30px;
+  }
+  input[type="text"],
+  input[type="text"]
+  {
+    padding: 10px;
+  }
+  label{
+    display: flex;
+    padding-top: 10px;
+      color: #4c3180;
+      font-family: 'Dagestan';
+      font-size: 25px;
+  }
+  .form-group input[type="submit"] {
+    background-color: #4c3180;
+    color: #fff;
+    float: right;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    top:110%;
+    left:75%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.45s;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: rgb(235, 160, 235);
+    color: #4c3180;
+
+  }
+  .message{
+    background: #F2DEDE ;
+    color: #A94442;
+    margin-top: 20px;
+    padding:10px;
+    width:100%;
+    border-radius: 5px;
+    font-family: Dagestan;
+    z-index: 1;
+  }
+  
+/* staffdetails php design  */
+
+.staffdetailtable{
+  position: absolute;
+  left:35%;
+  top:20%;
+}
+.shead{
+  background: rgb(235, 160, 235);
+}
+.shead th{
+     width:180px;
+    height:40px;
+    font-size: 23px;
+    font-family: 'Dagestan';
+    color: #4c3180;
+    background: rgb(235, 160, 235);
+    text-align: center;
+}
+.sbody td{
+  width:180px;
+  height:40px;
+  font-family: 'roboto';
+  font-size: 15px;
+  text-align: center;
+}
+.deletebtn{
+    background: rgb(221, 89, 89);
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+    width: 80px;
+    left:75%;
+    position: absolute;
+}
+.deletebtn:hover{
+  background: rgb(215, 25, 25);
+}
+
+
+/*    reservationtable design*/
+.staffreservationtable{
+  position: absolute;
+  left:22%;
+  top:10%;
+}
+.sshead th{
+  width:140px;
+ height:40px;
+ font-size: 23px;
+ font-family: 'Dagestan';
+ color: #4c3180;
+ background: rgb(235, 160, 235);
+ text-align: center;
+}
+.ssbody td{
+width:140px;
+height:40px;
+font-family: 'roboto';
+font-size: 15px;
+text-align: center;
+}
